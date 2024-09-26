@@ -1,31 +1,29 @@
+<!-- Index.html file -->
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Festival Entry Checker</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+          href="styles_cred.css">
+    <title>QR Code Scanner / Reader
+    </title>
 </head>
+
 <body>
     <div class="container">
-        <h1>Festival Entry Checker</h1>
-
-        <!-- Section for QR Code scanning -->
-        <div class="scanner">
-            <video id="video" width="300" height="300" style="border: 1px solid black"></video>
-            <button id="startScan">Start Scanning</button>
-            <p id="scanResult">Waiting for QR code...</p>
-        </div>
-
-        <!-- Section for displaying entry status -->
-        <div id="status" class="status hidden">
-            <h2>Entry Status</h2>
-            <p id="resultMessage"></p>
+        <h1>Scan QR Codes</h1>
+        <div class="section">
+            <div id="my-qr-reader">
+            </div>
         </div>
     </div>
-
-    <!-- Add the JavaScript libraries for QR code scanning -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsqr/1.4.0/jsQR.min.js"></script>
-    <script src="script.js"></script>
+    <script
+        src="https://unpkg.com/html5-qrcode">
+    </script>
+    <script src="script_cred.js"></script>
 </body>
+
 </html>
